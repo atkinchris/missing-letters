@@ -43,6 +43,7 @@ body {
 }
 
 .puzzle-rack {
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     max-width: 500px;
     margin-top: 128px;

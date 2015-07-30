@@ -30,14 +30,45 @@ body {
     opacity: 0.5;  
 }
 
+.puzzle-piece.space {
+    opacity: 0;
+}
+
 .puzzle-board,
 .puzzle-rack {
     display: flex;
     justify-content: center;
-    margin: 128px auto;
+    margin: 32px auto;
 }
 
 .puzzle-rack {
     flex-wrap: wrap;
     max-width: 500px;
+    margin-top: 128px;
+}
+
+.score {
+    color: #F3D488;
+    text-align: center;
+}
+
+.congratulations {
+    text-align: center;
+    margin: 128px auto;
+    padding: 32px;
+    max-width: 60%;
+    color: #AF3136;
+    background-color: #F3D488;
+    border-radius: 8px;
+    border: 1px solid #F68A57;
+    border-bottom-width: 4px;
+}
+
+.congratulations button {
+    padding: 16px;
+    background-color: #AF3136;
+    color: #F3D488;
+    font-weight: bold;
+    width: 60%;
+    font-size: 1.2em;
 }

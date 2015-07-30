@@ -5,23 +5,29 @@
         .module('puzzle')
         .controller('PuzzleStartController', PuzzleStartController);
 
-    PuzzleStartController.$inject = ['PuzzleService'];
+    PuzzleStartController.$inject = ['$state', 'PuzzleService'];
 
-    function PuzzleStartController(PuzzleService) {
+    function PuzzleStartController($state, PuzzleService) {
         var vm = this;
-        vm.letters = [];
-        vm.rack = [];
-
-        var puzzle;
+        vm.puzzle = {};
+        vm.tryLetter = tryLetter;
 
         activate();
 
         ////////////////
 
         function activate() {
-            puzzle = PuzzleService.getPuzzle();
-            vm.letters = puzzle.letters;
-            vm.rack = puzzle.rack;
+            PuzzleService.generate();
+            vm.puzzle = PuzzleService.puzzle;
+        }
+
+        function tryLetter(letter) {
+            PuzzleService.tryLetter(letter);
+            if (vm.puzzle.solved) {
+                $state.go('puzzle.solved', {
+                    score: vm.puzzle.score
+                });
+            }
         }
     }
 })();

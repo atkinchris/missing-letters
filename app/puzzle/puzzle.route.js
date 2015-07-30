@@ -19,6 +19,15 @@
                 templateUrl: 'app/puzzle/puzzle.start.html',
                 controller: 'PuzzleStartController',
                 controllerAs: 'vm'
+            })
+            .state('puzzle.solved', {
+                url: '',
+                templateUrl: 'app/puzzle/puzzle.solved.html',
+                controller: 'PuzzleSolvedController',
+                controllerAs: 'vm',
+                params: {
+                    score: null
+                }
             });
     }
 })();

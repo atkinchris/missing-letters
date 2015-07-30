@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #22263E;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 16px auto;
+}
+
+.puzzle-piece {
+    margin: 8px;
+    padding-right: 3px;
+    color: #AF3136;
+    background-color: #F3D488;
+    width: 61px;
+    height: 64px;
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: bold;
+    line-height: 1.4em;
+    border-radius: 8px;
+    border: 1px solid #F68A57;
+    border-bottom-width: 4px;
+}
+
+.puzzle-piece.unknown {
+    opacity: 0.5;  
+}
+
+.puzzle-board,
+.puzzle-rack {
+    display: flex;
+    justify-content: center;
+}

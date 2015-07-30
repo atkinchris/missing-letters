@@ -1,0 +1,7 @@
+<div class="puzzle-board">
+    <puzzle-piece ng-repeat="letter in vm.letters track by $index" letter="letter" />
+</div>
+
+<div class="puzzle-rack">
+    <puzzle-piece ng-repeat="letter in vm.rack" letter="letter" />
+</div>

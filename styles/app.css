@@ -34,4 +34,10 @@ body {
 .puzzle-rack {
     display: flex;
     justify-content: center;
+    margin: 128px auto;
+}
+
+.puzzle-rack {
+    flex-wrap: wrap;
+    max-width: 500px;
 }

@@ -3,6 +3,12 @@ body {
     padding: 0;
     background-color: #22263E;
     font-family: 'Open Sans', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .container {
@@ -24,11 +30,12 @@ body {
     border-radius: 8px;
     border: 1px solid #F68A57;
     border-bottom-width: 4px;
+    cursor: pointer;
 }
 
 .puzzle-piece.unknown,
 .puzzle-piece.used {
-    opacity: 0.5;  
+    opacity: 0.5;
 }
 
 .puzzle-piece.space {
@@ -75,4 +82,14 @@ body {
     font-weight: bold;
     width: 60%;
     font-size: 1.2em;
+}
+
+.restart-button {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: auto;
+    font-size: 1.2em;
+    padding: 16px;
+    height: auto;
 }

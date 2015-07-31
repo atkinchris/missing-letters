@@ -11,6 +11,7 @@
         var vm = this;
         vm.puzzle = {};
         vm.tryLetter = tryLetter;
+        vm.restart = activate;
 
         activate();
 

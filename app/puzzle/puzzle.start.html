@@ -5,3 +5,5 @@
 <div class="puzzle-rack">
     <puzzle-piece ng-repeat="letter in vm.puzzle.rack" letter="letter" ng-click="vm.tryLetter(letter)"/>
 </div>
+
+<div class="puzzle-piece restart-button" ng-click="vm.restart()">Another?</div>

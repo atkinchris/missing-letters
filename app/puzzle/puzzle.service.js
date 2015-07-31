@@ -16,7 +16,8 @@
             'Bananas',
             'Carrots',
             'Coca Cola',
-            'Laptop'
+            'Laptop',
+            'Chocolate'
         ];
         var _word = '';
         var _puzzle = {

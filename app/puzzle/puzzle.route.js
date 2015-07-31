@@ -26,7 +26,8 @@
                 controller: 'PuzzleSolvedController',
                 controllerAs: 'vm',
                 params: {
-                    score: null
+                    score: null,
+                    word: null
                 }
             });
     }

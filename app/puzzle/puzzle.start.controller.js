@@ -25,7 +25,8 @@
             PuzzleService.tryLetter(letter);
             if (vm.puzzle.solved) {
                 $state.go('puzzle.solved', {
-                    score: vm.puzzle.score
+                    score: vm.puzzle.score,
+                    word: vm.puzzle.letters
                 });
             }
         }

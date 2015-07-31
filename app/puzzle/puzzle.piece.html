@@ -1,3 +1,3 @@
-<div class="puzzle-piece" ng-class="{'unknown': letter == '?', 'space': letter == ' '}">
+<div class="puzzle-piece" ng-class="{'unknown': letter == '?', 'space': letter == ' ', 'used': used}" ng-click="used = true">
     {{letter}}
 </div>

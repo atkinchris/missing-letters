@@ -9,16 +9,14 @@
 
     function PuzzleService() {
         var _words = [
-            'Sainburys',
+            'Sainsburys',
             'Baked Beans',
             'Supermarket',
             'Checkout',
-            'Digital World',
             'Bananas',
             'Carrots',
             'Coca Cola',
-            'Laptop',
-            'Retail'
+            'Laptop'
         ];
         var _word = '';
         var _puzzle = {

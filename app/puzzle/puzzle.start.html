@@ -2,8 +2,6 @@
     <puzzle-piece ng-repeat="letter in vm.puzzle.letters track by $index" letter="letter" />
 </div>
 
-<h1 class="score">Score: {{vm.puzzle.score}}</h1>
-
 <div class="puzzle-rack">
     <puzzle-piece ng-repeat="letter in vm.puzzle.rack" letter="letter" ng-click="vm.tryLetter(letter)"/>
 </div>

@@ -26,7 +26,8 @@ body {
     border-bottom-width: 4px;
 }
 
-.puzzle-piece.unknown {
+.puzzle-piece.unknown,
+.puzzle-piece.used {
     opacity: 0.5;  
 }
 
@@ -39,19 +40,20 @@ body {
     display: -webkit-flex;
     display: flex;
     justify-content: center;
-    margin: 32px auto;
+    margin: 64px auto;
 }
 
 .puzzle-rack {
+    position: fixed;
+    bottom: 64px;
+    left: 50%;
+    margin-left: -250px;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    max-width: 500px;
-    margin-top: 128px;
-}
-
-.score {
-    color: #F3D488;
-    text-align: center;
+    width: 500px;
+    background-color: #333333;
+    border-radius: 8px;
+    padding: 8px;
 }
 
 .congratulations {

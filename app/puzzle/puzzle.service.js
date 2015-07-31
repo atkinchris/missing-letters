@@ -12,7 +12,13 @@
             'Sainburys',
             'Baked Beans',
             'Supermarket',
-            'Digital & Technology'
+            'Checkout',
+            'Digital World',
+            'Bananas',
+            'Carrots',
+            'Coca Cola',
+            'Laptop',
+            'Retail'
         ];
         var _word = '';
         var _puzzle = {
